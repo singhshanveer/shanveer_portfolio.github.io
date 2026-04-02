@@ -3217,6 +3217,7 @@ margin-top: 10%;
     gap: 3rem;
   }
 
+
   .portfolio-details .content-section .project-overview h2 {
     font-size: 2.25rem;
   }
@@ -3315,8 +3316,8 @@ margin-top: 10%;
 --------------------------------------------------------------*/
 
 .portfolio-details .journey-wrap {
-  margin-top: 70px;
-  margin-bottom: var(--space-4);
+  margin-top: 50px;
+  margin-bottom: 10%;
 }
 
 .portfolio-details .journey-wrap .timeline-item {
@@ -3357,6 +3358,9 @@ margin-top: 10%;
   box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
+.portfolio-details .content-section .project-overview h2{
+  font-weight: ;
+}
 
 /*--------------------------------------------------------------
 # Service Details Section
@@ -4456,4 +4460,72 @@ margin-bottom: 70px;
   color: var(--accent-color);
   box-shadow: 0 6px 20px color-mix(in srgb, var(--accent-color), transparent 90%);
   outline: none;
+}
+
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery{
+  margin-top: 10%;
+}
+
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery .gallery-item img {
+  transition: 0.3s;
+}
+
+.gallery .gallery-links {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.gallery .gallery-links .preview-link,
+.gallery .gallery-links .details-link {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  line-height: 1.2;
+  margin: 30px 8px 0 8px;
+}
+
+.gallery .gallery-links .preview-link:hover,
+.gallery .gallery-links .details-link:hover {
+  color: #ffffff;
+}
+
+.gallery .gallery-links .details-link {
+  font-size: 30px;
+  line-height: 0;
+}
+
+.gallery .gallery-item:hover .gallery-links {
+  opacity: 1;
+}
+
+.gallery .gallery-item:hover .preview-link,
+.gallery .gallery-item:hover .details-link {
+  margin-top: 0;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.glightbox-clean .gslide-description {
+  background: #272727;
+}
+
+.glightbox-clean .gslide-title {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
 }
